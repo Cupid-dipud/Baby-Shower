@@ -1,0 +1,8 @@
+{
+  "name": "Royal Jain Baby Shower & 14 Swapana Celebration",
+  "description": "A realistic cinematic royal Jain baby shower invitation featuring the 14 Divine Dreams (१४ महास्वप्न), blessings from Dev-Devi, and palace celebrations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

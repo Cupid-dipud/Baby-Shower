@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-cinzel {
+    font-family: 'Cinzel', serif;
+  }
+  .font-marcellus {
+    font-family: 'Marcellus', serif;
+  }
+  .font-vibes {
+    font-family: 'Great Vibes', cursive;
+  }
+  .font-rozha {
+    font-family: 'Rozha One', 'Noto Serif Devanagari', serif;
+  }
+  .font-devanagari {
+    font-family: 'Noto Serif Devanagari', 'Rozha One', serif;
+  }
+  .font-yatra {
+    font-family: 'Yatra One', 'Noto Serif Devanagari', cursive;
+  }
+}
+
+:root {
+  --primary-rose: #d84a72;
+  --deep-rose: #8a1339;
+  --regal-wine: #300615;
+  --blush-pink: #fce4ec;
+  --royal-gold: #d4af37;
+  --bright-gold: #fde88a;
+  --dark-gold: #aa771c;
+}
+
+/* Custom shimmering gold text */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #bf953f 0%, #fff2b2 25%, #b38728 50%, #fbf5b7 75%, #aa771c 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 20px rgba(212, 175, 55, 0.25);
+}
+
+.rose-gold-text {
+  background: linear-gradient(135deg, #f7b2c5 0%, #ffd9e4 30%, #d84a72 70%, #ffdf85 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Regal glowing borders */
+.royal-border {
+  border: 2px solid #d4af37;
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.25), inset 0 0 15px rgba(212, 175, 55, 0.15);
+}
+
+.royal-box {
+  background: radial-gradient(circle at 50% 30%, rgba(68, 11, 31, 0.85) 0%, rgba(20, 4, 9, 0.95) 100%);
+  border: 1.5px solid rgba(212, 175, 55, 0.6);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8), 0 0 30px rgba(216, 74, 114, 0.2);
+}
+
+/* 3D Royal Gate Container */
+.gate-perspective {
+  perspective: 1200px;
+}
+
+.gate-door-left {
+  transform-origin: left center;
+  transition: transform 2.2s cubic-bezier(0.25, 1, 0.35, 1), opacity 1.8s ease;
+}
+
+.gate-door-right {
+  transform-origin: right center;
+  transition: transform 2.2s cubic-bezier(0.25, 1, 0.35, 1), opacity 1.8s ease;
+}
+
+.gate-door-left.open {
+  transform: rotateY(-92deg) scale(0.97);
+}
+
+.gate-door-right.open {
+  transform: rotateY(92deg) scale(0.97);
+}
+
+/* Floating animation for spiritual aura */
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(0.5deg);
+  }
+}
+
+.animate-float {
+  animation: floatGentle 5s ease-in-out infinite;
+}
+
+@keyframes pulseGold {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4), inset 0 0 10px rgba(212, 175, 55, 0.2);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.8), 0 0 50px rgba(216, 74, 114, 0.4), inset 0 0 15px rgba(212, 175, 55, 0.4);
+    transform: scale(1.02);
+  }
+}
+
+.animate-pulse-gold {
+  animation: pulseGold 2.8s ease-in-out infinite;
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 50s linear infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #140409;
+}
+::-webkit-scrollbar-thumb {
+  background: #b38728;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
